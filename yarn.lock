@@ -8841,10 +8841,10 @@ react-app-polyfill@^1.0.6:
     regenerator-runtime "^0.13.3"
     whatwg-fetch "^3.0.0"
 
-react-chat-screen@^0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/react-chat-screen/-/react-chat-screen-0.1.4.tgz#cbb77563a3eaac12a86d8e13db46d7c8d89d2b0c"
-  integrity sha512-FsKykLnMkmljBm2T25EboiesnHWn9SGYpBL0BlPOrYN8PC7eS+Lq+IzzMVbkezFBy9PelgS8PufDbnJ7+OUvAQ==
+react-chat-screen@^0.1.4, react-chat-screen@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/react-chat-screen/-/react-chat-screen-0.1.5.tgz#b41bcef58ea6c24aca4c3da497c6860e7ab3f491"
+  integrity sha512-96ypgWNrCGRMpHqaxpTXsN7oLPBHdKrcoyffBCf/zEIUbG5muuCeZj6Vq3BRD2dK1Q4uUJyzYP2XASeo/HKYiw==
   dependencies:
     "@chakra-ui/core" "^0.6.1"
     "@emotion/core" "^10.0.28"
@@ -8857,6 +8857,7 @@ react-chat-screen@^0.1.4:
     fsevents "^2.1.2"
     moment "^2.24.0"
     react "^16.13.0"
+    react-chat-screen "^0.1.4"
     react-dom "^16.13.0"
     react-redux "^7.1.3"
     react-router-dom "^5.1.2"
