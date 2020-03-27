@@ -3,7 +3,6 @@ import { Box, Stack, Input, Text, Button } from "@chakra-ui/core";
 import PropTypes from 'prop-types';
 import * as moment from 'moment';
 import './styles/chatscreen.scss'
-import 'react-calendar/dist/Calendar.css';
 
 
 function ChatScreen(props){    
@@ -133,6 +132,5 @@ ChatScreen.defaultProps = {
     messageList: []
 }
   
-
 
 export default ChatScreen;

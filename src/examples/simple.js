@@ -15,7 +15,7 @@ function Example(){
         }
         setMessageList(messageList => [...messageList,  authorObj]);        
     }, [])
-
+ 
 
     const onSend = () => {    
         let authorObj = {
