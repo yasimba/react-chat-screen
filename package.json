@@ -1,6 +1,6 @@
 {
   "name": "react-chat-screen",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "main": "./lib/ChatScreen.js",
   "private": false,
   "dependencies": {
