@@ -3,6 +3,7 @@ import { Box, Stack, Input, Text, Button } from "@chakra-ui/core";
 import PropTypes from 'prop-types';
 import moment from 'moment'
 import './styles/chatscreen.scss'
+import { ThemeProvider, CSSReset } from "@chakra-ui/core"
 
 
 function ChatScreen(props){    
@@ -36,7 +37,8 @@ function ChatScreen(props){
       }
  
     return (
-        
+    <ThemeProvider>
+    <CSSReset />
     <div id="chatview">
     <div className={props.isWidget ? "widget" : ""}>            
             <div  className="chatbox">  
@@ -120,6 +122,7 @@ function ChatScreen(props){
         </div>
       </div>
       </div>
+      </ThemeProvider>
       )
 }
 

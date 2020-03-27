@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import ChatScreen from '../lib';
+import ChatScreen from 'react-chat-screen';
 
 
 function Example(){
