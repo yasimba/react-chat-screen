@@ -1,68 +1,92 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+To view in visual studio - command+shift+v (Mac)
 
-## Available Scripts
 
-In the project directory, you can run:
+### `SIMPLE DEMO`
+![demo](/assets/demo.gif)
 
-### `yarn start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Extremely Customizable
+![demo2](/assets/demo2.gif)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Widget Support
+![demo3](/assets/demo3.png)
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+### `INSTALLATION`
+`npm install react-chat-screen`
+`yarn add react-chat-screen`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### `QUICKSTART`
+```javascript
+import React, { useState, useEffect } from 'react';
+import ChatScreen from 'react-chat-screen';
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+function Example(){
+    const[messageList, setMessageList] = useState([])
+    const[msg, setMsg] = useState('')
+    useEffect(()=> {        
+        let authorObj = {
+            author: 'self',
+            type: 'text',
+            data: { 
+                text: 'hi'
+             }
+        }
+        setMessageList(messageList => [...messageList,  authorObj]);        
+    }, [])
+ 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    const onSend = () => {    
+        let authorObj = {
+            author: 'other',
+            type: 'text',
+            data: { 
+                text: msg
+             }
+        }      
+        setMessageList(messageList => [...messageList,  authorObj]);
+        setMsg('')        
+    }
+    return (
+        <div >     
+         <ChatScreen            
+            messageList={messageList}
+            onSend={onSend}
+            sendLabel={true}
+            isWidget = {false}
+            otherBgColor="lime"            
+            value = {msg}
+            onChange = {(e)=> setMsg(e.target.value)}       
+        />
+        </div>
+    ) 
+}
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+export default Example;
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### `Plenty of props to play with!`
+```javascript 
+    <ChatScreen            
+            messageList={[]}
+            onSend={()=>{}}
+            sendLabel={false}
+            isWidget = {false}
+            otherBgColor={""}    
+            selfBgColor={""}    
+            headingBgColor={""}    
+            errorBorderColor={""}
+            focusBorderColor={""}
+            value = {""}
+            sendLabel={""}
+            sendBtnColor={""}
+            onChange = {()=>{}}       
+        />
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### `CONTRIBUTING`
+- Pull requests and Contributions are Welcome!
+- `yarn test`

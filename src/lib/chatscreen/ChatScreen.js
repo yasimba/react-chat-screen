@@ -102,8 +102,7 @@ function ChatScreen(props){
             <Box bg={props.bgColor ? props.bgColor : ""} w="100%" h="250%" p={4} >                  
             <div className="textbox">            
             <Stack isInline spacing={2} align="center">
-              <Input  isInvalid
-             
+              <Input  isInvalid             
               errorBorderColor={props.borderColor ? props.errorBorderColor : "lime"} 
               focusBorderColor={props.focusBorderColor ? props.focusBorderColor  
                 : "lime"} variant="outline"  onKeyDown={e => onKeyDown(e)} 
@@ -111,7 +110,7 @@ function ChatScreen(props){
                 onChange={props.onChange} align="bottom"
                placeholder="Enter Message" />
                 {
-                props.sendLabel ?  <Button variantColor={props.variantColor ? props.variantColor : "green"}             
+                props.sendLabel ?  <Button variantColor={props.sendBtnColor ? props.sendBtnColor : "green"}             
                 onClick={() => sendMessage()} type="submit">Send</Button>   : ""
                 }                                                                                       
               </Stack>                            
