@@ -1,7 +1,7 @@
 import React, {useEffect, useRef } from "react";
 import { Box, Stack, Input, Text, Button } from "@chakra-ui/core";
 import PropTypes from 'prop-types';
-import * as moment from 'moment';
+import moment from 'moment'
 import './styles/chatscreen.scss'
 
 
