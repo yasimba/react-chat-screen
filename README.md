@@ -21,7 +21,7 @@ To view in visual studio - command+shift+v (Mac)
 ### `QUICKSTART`
 ```javascript
 import React, { useState, useEffect } from 'react';
-import { ChatScreen } from 'react-chat-screen';
+import  ChatScreen  from 'react-chat-screen';
 
 
 function Example(){
