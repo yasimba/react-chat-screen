@@ -14,8 +14,8 @@ To view in visual studio - command+shift+v (Mac)
 
 
 ### `INSTALLATION`
-`npm install react-chat-screen`
-`yarn add react-chat-screen`
+- `npm install react-chat-screen`
+- `yarn add react-chat-screen`
 
 
 ### `QUICKSTART`
@@ -86,6 +86,14 @@ export default Example;
             onChange = {()=>{}}       
         />
 ```
+
+
+### `ROADMAP`
+- [ ] Add more tests
+- [ ] Add emoji support
+- [ ] Add is-typing feature
+- [ ] Add slack-like unread messages
+
 
 ### `CONTRIBUTING`
 - Pull requests and Contributions are Welcome!
