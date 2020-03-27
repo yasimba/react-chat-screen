@@ -2,7 +2,7 @@
   "name": "react-chat-screen",
   "version": "0.1.2",
   "main": "lib/index.js",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@chakra-ui/core": "^0.6.1",
     "@emotion/core": "^10.0.28",
