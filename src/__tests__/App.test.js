@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import App from './App';
+import App from '../App';
 
 test('renders simple example', () => {
   window.HTMLElement.prototype.scrollIntoView = jest.fn()
