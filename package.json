@@ -19,7 +19,7 @@
     "css-loader": "^3.4.2",
     "emotion-theming": "^10.0.27",
     "fsevents": "^2.1.2",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "node-sass": "^4.13.1",
     "react": "^16.13.0",
     "react-chat-screen": "^0.1.8",
